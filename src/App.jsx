@@ -1,36 +1,70 @@
-//import Apps from "./Apps";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  
+  /*const loginData = {
+    nickname: 'Vasya',
+    email:"vasya98@mail.com",
+    password: '123456'
+  }
 
   return (
-    <div className="App">
-      <div className="container">
-        <div className="row justify-content-centr">
-          <div className="col-12 col-md-6">
-            <div className="bg-ligt text-centr p-2 display-6 mb-2">
-              Pro <b>Counter</b>
-            </div>
 
-            <div className="display-1 text-centr my-5 py-5">{counter}</div>
-            <div className="row">
-              <div className="col">
-                 <button className="btn btn-primaty w-100" onClick={() => setCounter(counter + 1)}>Увеличить</button>
-              </div>
-              <div className="col">
-                 <button className="btn btn-succes w-100" onClick={() => setCounter(counter - 1)}>Уменьшить</button>
-              </div>
-              <div className="col">
-                 <button className="btn btn-outline-danger w-100" onClick={() => setCounter(0)}>Сбросить</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="App">
+
     </div>
-    );
+
+  );*/
+
+  /*return (
+    <div className="App">
+      <button onClick={() => alert("Это то самое модальное окно")}>
+        Кликни
+      </button>
+    </div>
+  );*/
+
+  /*const [click, setClcik] = useState(0);
+  //const [click, setClick] = useState(null);
+  useEffect( () => {
+      document.title = 'Вы нажали ${click} на заголовок';
+  },[]);
+  return (
+    <div className="App">
+
+      <p>
+        Вы нажали {click} раз
+      </p>
+      <button onClick={ () => setClcik(click+1)}>
+        нажми на меня 
+      </button>
+    </div>
+  );*/
+
+  /*
+  const [click, setClcik] = useState(0);
+  const fet = useEffect( () => {
+    fetch(`https://62eccf42818ab252b602d7c4.mockapi.ioitems`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      return data;
+    });
+  }, []);
+  return (
+    <div className="App">
+
+      <p>
+        Вы нажали {click} раз
+      </p>
+      <button onClick={ () => setClcik(click+1)}>
+        нажми на меня 
+      </button>
+    </div>
+  );*/
 }
+
+
 
 export default App;
