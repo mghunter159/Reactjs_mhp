@@ -5,8 +5,11 @@ import App from './App';
 import {render} from 'react-dom';
 import { Provider } from 'react-redux';
 import {createStore} from 'redux';
+import rootReducer from './action/reducers'
+import App from './components/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <Provider store={store}>
     <App />
